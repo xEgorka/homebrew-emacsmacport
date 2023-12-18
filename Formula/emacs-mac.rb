@@ -121,7 +121,7 @@ class EmacsMac < Formula
     args << "--with-modules" if build.with? "modules"
     args << "--with-rsvg" if build.with? "rsvg"
     args << "--with-mac-metal" if build.with? "mac-metal"
-    args << "--with-native-compilation" if (build.with? "native-comp") || (build.with? "native-compilation")
+    args << "--with-native-compilation=aot" if (build.with? "native-comp") || (build.with? "native-compilation")
     args << "--with-xwidgets" if build.with? "xwidgets"
     args << "--with-tree-sitter" if build.with? "tree-sitter"
 
